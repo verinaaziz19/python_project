@@ -198,4 +198,8 @@ class Player(Entity):
     class State(enum.Enum):
         READY = 0
         EATEN = 1
+<<<<<<< HEAD
         CHASE = 2
+=======
+        CHASE = 2
+>>>>>>> 4f23c89eb781183e270df8345e5dfb6f481436a9

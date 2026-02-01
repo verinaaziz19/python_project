@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 from tkinter import font
+>>>>>>> 4f23c89eb781183e270df8345e5dfb6f481436a9
 import pygame
 from pygame import Surface
 from model.board_structure import BoardStructure
@@ -67,6 +70,8 @@ class GameEngine:
                          (self.screen.get_width() / 2 + self.screen.get_width() / 16,
                           self.screen.get_height() / 2 + self.screen.get_height() / 6))
 
+<<<<<<< HEAD
+=======
     def show_winning_screen(self):
         self.screen.fill((0, 0, 0))
         font = pygame.font.SysFont('arial', 50, bold=True)
@@ -86,6 +91,7 @@ class GameEngine:
                     return False
         return True
     
+>>>>>>> 4f23c89eb781183e270df8345e5dfb6f481436a9
     def tick(self):
         if self.player.lives == -1:
             self.game_over = True
@@ -107,10 +113,13 @@ class GameEngine:
                 self.move_player()
                 self.move_ghosts()
                 self.check_ghosts_and_player_collision()
+<<<<<<< HEAD
+=======
                 # NEW: check if all dots are eaten
                 if self.all_dots_eaten():
                     self.show_winning_screen()
                     return  # Stop further game logic
+>>>>>>> 4f23c89eb781183e270df8345e5dfb6f481436a9
             elif self.player.is_eaten():
                 self.player.play_death_animation(self.screen)
             if DEBUG:
